@@ -1,0 +1,75 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+.app {
+  background-color: #ddd;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.customer-list {
+  width: 30vw;
+  border: 1px solid #ddd;
+  height: calc(93vh - 20px);
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+.customer-details {
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  height: calc(85vh - 20px);
+  text-align: center;
+  padding: 50px 100px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+}
+
+.card {
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+}
+
+.card.selected {
+  background-color: #e1e1e1;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  margin-top: 20px;
+  width: auto;
+  max-width: 900px;
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+.photo-grid img {
+  width: 100%;
+  height: 200px;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.customer-list-container {
+  width: 30vw;
+  display: flex;
+  justify-content: center;
+}
+
+.customer-details-container {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  overflow-y: auto;
+}
